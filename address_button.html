@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address_button</title>
+    <script type="text/javascript" href></script>
+</head>
+<body>
+    <button id="sign-in-button">Sign In</button>
+
+<script>
+  const signInButton = document.getElementById('sign-in-button');
+
+  signInButton.addEventListener('click', () => {
+    const userAddress = prompt("Please enter your address:");
+    const states = ["Haryana","haryana", "Punjab","punjab", "Chandigarh","chandigarh"];
+
+    if (states.includes(userAddress)) {
+      window.location.href = "sign-in-page.html";
+    } else {
+      alert("Sorry, you are not from Haryana, Punjab or Chandigarh.");
+    }
+  });
+</script>
+    
+</body>
+</html>
